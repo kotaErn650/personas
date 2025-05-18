@@ -36,6 +36,7 @@ export default {
     axios
       .get('http://127.0.0.1:8000/api/comunas')
       .then(response => (this.comunas = response.data.comunas))
+      .catch(error => console.error(error));
   }
 }
 </script>
