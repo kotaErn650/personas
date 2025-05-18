@@ -1,6 +1,11 @@
 <template>
   <div class="container">
-    <h1>Listado de comunas</h1>
+    <h1>Listado de comunas |
+      <button @click="text-start"
+        class="btn btn-success mx-2">
+        <font-awesome-icon icon="plus" />
+      </button>
+    </h1>
     <table class="table">
       <thead>
         <tr>
@@ -37,6 +42,8 @@
 </template>
 
 <script>
+
+
 import axios from "axios";
 import Swal from "sweetalert2";
 
